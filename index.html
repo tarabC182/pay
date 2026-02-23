@@ -74,10 +74,10 @@ var ua = navigator.userAgent.toLowerCase();
 var content = document.getElementById("content");
 
 if(ua.indexOf("micromessenger") > -1){
-    content.innerHTML = "<div class='label'>微信支付</div><img src='wechat.jpg'>";
+    content.innerHTML = "<div class='label'>长按识别二维码付款</div><img src='wechat.png'>";
 }
 else if(ua.indexOf("alipayclient") > -1){
-    content.innerHTML = "<div class='label'>支付宝</div><img src='alipay.jpg'>";
+    content.innerHTML = "<div class='label'>长按识别二维码付款</div><img src='alipay.png'>";
 }
 else{
     content.innerHTML = `
